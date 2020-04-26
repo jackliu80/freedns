@@ -38,7 +38,7 @@ def update_record_if_necessary(records, live_ip):
             print('No change needed for ' + host + '!')
         else:
             http = urllib.request.urlopen(url)
-            print(http.read_user_sha1().decode())
+            print(http.read().decode())
             updated.append(address)
 
 
